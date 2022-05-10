@@ -1,0 +1,425 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1140</width>
+    <height>713</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>config ip</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(199, 226, 255);</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLineEdit" name="c">
+    <property name="geometry">
+     <rect>
+      <x>300</x>
+      <y>380</y>
+      <width>113</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 75 12pt &quot;Arial&quot;;
+color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="a">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>380</y>
+      <width>113</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 75 12pt &quot;Arial&quot;;
+color: rgb(255, 255, 255);</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_optimum">
+    <property name="geometry">
+     <rect>
+      <x>170</x>
+      <y>60</y>
+      <width>731</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(18, 12, 107);
+font: 40pt &quot;Segoe Print&quot;;
+</string>
+    </property>
+    <property name="text">
+     <string>Méthode non linéaire</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_afficher">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>540</y>
+      <width>171</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">
+border-top-color: rgb(255, 255, 255);
+border-bottom-color: rgb(255, 255, 255);
+color: rgb(18, 12, 107);
+font: 20pt &quot;Segoe Print&quot;;</string>
+    </property>
+    <property name="text">
+     <string>Résultat</string>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="comboBox_methode">
+    <property name="geometry">
+     <rect>
+      <x>930</x>
+      <y>260</y>
+      <width>191</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial</family>
+      <pointsize>12</pointsize>
+      <weight>9</weight>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 75 12pt &quot;Arial&quot;;
+color: rgb(255, 255, 255);</string>
+    </property>
+    <item>
+     <property name="text">
+      <string>Newton-Raphson</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Bissection</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Pas fixe</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Pas accéléré</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QLineEdit" name="b">
+    <property name="geometry">
+     <rect>
+      <x>180</x>
+      <y>380</y>
+      <width>113</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 75 12pt &quot;Arial&quot;;
+color: rgb(255, 255, 255);</string>
+    </property>
+   </widget>
+   <widget class="QTextEdit" name="textEdit">
+    <property name="geometry">
+     <rect>
+      <x>200</x>
+      <y>510</y>
+      <width>471</width>
+      <height>151</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 75 12pt &quot;Arial&quot;;
+color: rgb(255, 255, 255);</string>
+    </property>
+   </widget>
+   <widget class="QTableWidget" name="tableWidget">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>340</y>
+      <width>791</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <row>
+     <property name="text">
+      <string>f(x)</string>
+     </property>
+    </row>
+    <column>
+     <property name="text">
+      <string>x^5</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>x^4</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>x^3</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>x^2</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>x</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>c</string>
+     </property>
+    </column>
+   </widget>
+   <widget class="QLineEdit" name="e">
+    <property name="geometry">
+     <rect>
+      <x>550</x>
+      <y>380</y>
+      <width>113</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 75 12pt &quot;Arial&quot;;
+color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="f">
+    <property name="geometry">
+     <rect>
+      <x>680</x>
+      <y>380</y>
+      <width>113</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 75 12pt &quot;Arial&quot;;
+color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_fo">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>250</y>
+      <width>361</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Segoe Print</family>
+      <pointsize>20</pointsize>
+      <weight>50</weight>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(18, 12, 107);
+font: 20pt &quot;Segoe Print&quot;;</string>
+    </property>
+    <property name="text">
+     <string>Fonction objective</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="x0">
+    <property name="geometry">
+     <rect>
+      <x>870</x>
+      <y>340</y>
+      <width>113</width>
+      <height>22</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_xo">
+    <property name="geometry">
+     <rect>
+      <x>840</x>
+      <y>340</y>
+      <width>31</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 75 10pt &quot;Arial&quot;;
+color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string>x0</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="epsilon">
+    <property name="geometry">
+     <rect>
+      <x>870</x>
+      <y>390</y>
+      <width>113</width>
+      <height>22</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_epsilon">
+    <property name="geometry">
+     <rect>
+      <x>810</x>
+      <y>390</y>
+      <width>81</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 75 10pt &quot;Arial&quot;;
+color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string>Epsilon</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="pas">
+    <property name="geometry">
+     <rect>
+      <x>1020</x>
+      <y>390</y>
+      <width>113</width>
+      <height>22</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_pas">
+    <property name="geometry">
+     <rect>
+      <x>990</x>
+      <y>390</y>
+      <width>41</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 75 10pt &quot;Arial&quot;;
+color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string>Pas</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="d">
+    <property name="geometry">
+     <rect>
+      <x>430</x>
+      <y>380</y>
+      <width>113</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 75 12pt &quot;Arial&quot;;
+color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="x1_2">
+    <property name="geometry">
+     <rect>
+      <x>1000</x>
+      <y>340</y>
+      <width>81</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 75 10pt &quot;Arial&quot;;
+color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string>x1</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="x1">
+    <property name="geometry">
+     <rect>
+      <x>1020</x>
+      <y>340</y>
+      <width>113</width>
+      <height>22</height>
+     </rect>
+    </property>
+   </widget>
+   <zorder>tableWidget</zorder>
+   <zorder>c</zorder>
+   <zorder>a</zorder>
+   <zorder>label_optimum</zorder>
+   <zorder>pushButton_afficher</zorder>
+   <zorder>comboBox_methode</zorder>
+   <zorder>b</zorder>
+   <zorder>textEdit</zorder>
+   <zorder>e</zorder>
+   <zorder>f</zorder>
+   <zorder>label_fo</zorder>
+   <zorder>x0</zorder>
+   <zorder>label_xo</zorder>
+   <zorder>epsilon</zorder>
+   <zorder>label_epsilon</zorder>
+   <zorder>pas</zorder>
+   <zorder>label_pas</zorder>
+   <zorder>d</zorder>
+   <zorder>x1_2</zorder>
+   <zorder>x1</zorder>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1140</width>
+     <height>26</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
